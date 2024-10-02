@@ -1,0 +1,45 @@
+{
+    "name": "dashopapp/api",
+    "description": "API package for Dashopapp CMS",
+    "type": "package",
+    "license": "MIT",
+    "keywords": [
+        "dashopapp",
+        "dashopapp cms",
+        "dashopapp platform",
+        "dashopapp api"
+    ],
+    "homepage": "https://dashopapp.com",
+    "authors": [
+        {
+            "name": "Dashopapp Technologies",
+            "email": "contact@dashopapp.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Dashopapp\\Api\\": "src"
+        }
+    },
+    "require": {
+        "knuckleswtf/scribe": "^4.22"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.4.0",
+        "phpunit/phpunit": "^9.0|^10.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dashopapp\\Api\\Providers\\ApiServiceProvider"
+            ],
+            "aliases": {
+                "ApiHelper": "Dashopapp\\Api\\Facades\\ApiHelper"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}
